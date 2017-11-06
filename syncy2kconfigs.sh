@@ -6,4 +6,5 @@ git clone y2kbugger@bitbucket.org:y2kbugger/bash_config.git \ "$tmppath/bash_con
 cd "$tmppath/bash_config"
 cp .bashrc .bash_aliases .inputrc ~/
 
+# cleanup
 rm -rf $tmppath
