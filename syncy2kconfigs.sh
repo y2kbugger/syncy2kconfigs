@@ -8,4 +8,4 @@ pwd
 cp .bashrc .bash_aliases .inputrc .dir_colors ~/
 
 # cleanup
-# rm -rf $tmppath
+rm -rf $tmppath
