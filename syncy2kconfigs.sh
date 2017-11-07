@@ -5,7 +5,7 @@ git clone y2kbugger@bitbucket.org:y2kbugger/bash_config.git $tmppath
 
 cd $tmppath
 pwd
-cp .bashrc .bash_aliases .inputrc .dir_colors ~/
+cp .bash_profile .bashrc .bash_aliases .inputrc .dir_colors ~/
 
 # cleanup
 rm -rf $tmppath
