@@ -9,3 +9,7 @@ if [ $(uname) = "Linux" ]; then
 elif [ $(uname) = "msys" ]; then
     ln -fs $p/.bash_aliases_win ~/
 fi
+
+# ssh_authorized_keys
+p="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && readlink -f ssh_authorized_keys )"
+cp -p $p/authorized_keys ~/.ssh/
