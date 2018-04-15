@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Update configs. Note that a more thorough --remote update may also need to be done.
-"$( cd "$( dirname "${BASH_SOURCE[0]}" )" && git pull origin master && git submodule update --recursive )"
+"$( cd "$( dirname "${BASH_SOURCE[0]}" )" && git pull origin master && git submodule update --recursive --init )"
 
 # bash_config
 p="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && readlink -f bash_config )"
