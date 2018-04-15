@@ -1,1 +1,23 @@
-pull configs from bit bucket and sync all to all devices including p182, itxs8, 15r, and termux
+Pull configs from bitbucket and sync all to all devices including p182, itxs8, 15r, and termux
+
+First update recursively all submodules, which includes the vim plugins and their submodules pointing to the 'correct' ref that has been committed. Note: that this is run every time we run the syncy2kconfigs.sh script:
+
+    [y2k@15r syncy2kconfigs]
+    $ git submodule update --recursive
+
+Then update all of my personal repos to the latest that has been pushed to my bitbucket remotes:
+
+    [y2k@15r syncy2kconfigs]
+    $ git submodule update --remote
+
+Finally, pull the newest versions of vim plugins from the remotes:
+
+    [y2k@15r syncy2kconfigs]
+    $ cd vim_config && git submodule update --remote
+
+Then you can go go through git status and see what remote updates need rebased/merged/committed.
+
+To add nvim plugins:
+
+    $ cd ~/devel/syncy2kconfigs/vim_config/bundle
+    $ git submodule add https://github.com/Shougo/deoplete.nvim.git

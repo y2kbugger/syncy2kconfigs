@@ -4,3 +4,6 @@
 [submodule "ssh_authorized_keys"]
 	path = ssh_authorized_keys
 	url = y2kbugger@bitbucket.org:y2kbugger/ssh_authorized_keys
+[submodule "vim_config"]
+	path = vim_config
+	url = git@bitbucket.org:y2kbugger/vim_config.git
