@@ -28,3 +28,7 @@ A good way to check whether you have any uncommited changes after doing the abov
 
     [y2k@15r syncy2kconfigs]
     $ git submodule foreach "git log --all --graph --decorate --oneline -n1 --date=relative; git status -s"
+
+
+How To: Creating a new config subrepo
+https://docs.google.com/document/d/11VKKo1fpJkOD05ovKZDX9UaXIYi2mGj4NIUjvdSGJWk/edit
