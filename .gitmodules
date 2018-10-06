@@ -7,6 +7,6 @@
 [submodule "vim_config"]
 	path = vim_config
 	url = git@bitbucket.org:y2kbugger/vim_config.git
-[submodule "/home/y2k/devel/syncy2kconfigs/desktop_environment_config"]
+[submodule "desktop_environment_config"]
 	path = /home/y2k/devel/syncy2kconfigs/desktop_environment_config
-	url = /home/y2k/.git
+	url = git@bitbucket.org:y2kbugger/desktop_environment_config.git
