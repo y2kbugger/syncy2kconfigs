@@ -10,3 +10,6 @@
 [submodule "desktop_environment_config"]
 	path = desktop_environment_config
 	url = y2kbugger@bitbucket.org:y2kbugger/desktop_environment_config.git
+[submodule "system_scripts"]
+	path = system_scripts
+	url = y2kbugger@bitbucket.org:y2kbugger/system_scripts.git
