@@ -29,5 +29,5 @@ cp -p $p/authorized_keys ~/.ssh/
 
 # vim
 p="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && readlink -f vim_config )"
-ln -fs $p ~/.config/nvim
+ln -fsT $p ~/.config/nvim
 
