@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# check if on windows
+if [ -d /c ]; then
+    win=true
+else
+    win=false
+fi
+
 # Update configs. Note that a more thorough --remote update may also need to be done.
 echo "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && git pull origin master && git submodule update --recursive --init )"
 
@@ -16,18 +23,25 @@ ln -fs \
     $p/.tmux.conf \
     ~/
 # system specific
-if [ $(uname) = "Linux" ]; then
-    ln -fs $p/.bash_aliases_home ~/
-elif [ $(uname) = "msys" ]; then
+if [ ${win} = true ]; then
     ln -fs $p/.bash_aliases_win ~/
+else
+    ln -fs $p/.bash_aliases_home ~/
 fi
 
-# ssh_authorized_keys
-p="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && readlink -f ssh_authorized_keys )"
-cp -p $p/authorized_keys ~/.ssh/
+# Authorized Keys
+if [ ${win} = false ]; then
+    p="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && readlink -f ssh_authorized_keys )"
+    cp -p $p/authorized_keys ~/.ssh/
+fi
 
 
 # vim
 p="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && readlink -f vim_config )"
-ln -fsT $p ~/.config/nvim
+echo $p
+if [ ${win} = true ]; then
+    ln -fsT $p ~/AppData/Local/nvim
+else
+    ln -fsT $p ~/.config/nvim
+fi
 
