@@ -1,20 +1,20 @@
 [submodule "bash_config"]
 	path = bash_config
-	url = y2kbugger@bitbucket.org:y2kbugger/bash_config.git
+	url = git@github.com:y2kbugger/bash_config.git
 	branch = master
 [submodule "ssh_authorized_keys"]
 	path = ssh_authorized_keys
-	url = y2kbugger@bitbucket.org:y2kbugger/ssh_authorized_keys
+	url = git@github.com:y2kbugger/ssh_authorized_keys
 	branch = master
 [submodule "vim_config"]
 	path = vim_config
-	url = git@bitbucket.org:y2kbugger/vim_config.git
+	url = git@github.com:y2kbugger/vim_config.git
 	branch = master
 [submodule "desktop_environment_config"]
 	path = desktop_environment_config
-	url = y2kbugger@bitbucket.org:y2kbugger/desktop_environment_config.git
+	url = git@github.com:y2kbugger/desktop_environment_config.git
 	branch = master
 [submodule "system_scripts"]
 	path = system_scripts
-	url = y2kbugger@bitbucket.org:y2kbugger/system_scripts.git
+	url = git@github.com:y2kbugger/system_scripts.git
 	branch = master
