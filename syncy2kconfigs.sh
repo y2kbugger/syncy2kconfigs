@@ -52,9 +52,10 @@ if [ ${win} = false ]; then
     ln -fsT $p/.config/i3 ~/.config/i3
     ln -fsT $p/.config/i3status ~/.config/i3status
     ln -fsT $p/.config/dunst ~/.config/dunst
+    ln -fsT $p/.config/autorandr ~/.config/autorandr
     ln -fsT $p/.mplayer ~/.mplayer
 
-    ln -fs $p/.config/pulse/default.pa ~/.config/pulse/default.pa
+    # ln -fs $p/.config/pulse/default.pa ~/.config/pulse/default.pa
     ln -fs $p/.config/picom.conf ~/.config/picom.conf
     ln -fs $p/.config/user-dirs.dirs ~/.config/user-dirs.dirs
     ln -fs $p/.Xresources ~/.Xresources
